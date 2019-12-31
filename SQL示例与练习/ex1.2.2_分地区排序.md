@@ -43,8 +43,28 @@ insert into district_products(
 ```
 
 ## 答案:
+
+**使用连接子查询:**
 ```sql
-select district, name, price, (select count(*) + 1 from district_products as d2 where d2.district = d1.district and d2.price > d1.price) as rank_1
+select district,
+        name,
+        price,
+        (select count(*) + 1
+            from district_products as d2
+        where d2.district = d1.district
+            and d2.price > d1.price) as rank_1
 from district_products as d1
 order by district, price desc;
+```
+
+**使用rank窗口函数:**
+```sql
+select district,
+        name,
+        price,
+        rank() over(
+            partition by d.district
+            order by d.price desc
+        ) as rank_1
+from district_products as d;
 ```
