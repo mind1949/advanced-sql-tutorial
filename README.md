@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/lianjie1949/12c4fb6e-7857-4487-9fde-3e40509bd1d4/342a7fb3-4a88-42a5-91bc-5ddd42c9891a/_apis/work/boardbadge/9e21771c-5eb8-43d6-afb9-3f61a270b274)](https://dev.azure.com/lianjie1949/12c4fb6e-7857-4487-9fde-3e40509bd1d4/_boards/board/t/342a7fb3-4a88-42a5-91bc-5ddd42c9891a/Microsoft.RequirementCategory)
 ## 目的:
 学习[sql进阶教程](https://book.douban.com/subject/27194738//)
 
